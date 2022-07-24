@@ -2,16 +2,17 @@
 ##fizzbuzz
 def fizzbuzz(): 
     for x in range (1, 101):
-        if x % 3 == 0 and x % 5 == 0:
-            print("FizzBuzz")
-            continue
-        elif x % 3 == 0:
-            print("Fizz")
-            continue
-        elif x % 5 == 0:
-            print("Buzz")
-            continue
-        print(x)
+        l = []
+        if x % 3 == 0:
+            l.append("Fizz")
+        if x % 5 == 0:
+            l.append("Buzz")
+        if x % 7 == 0:
+            l.append("Bang")
+        if l:
+            print("".join(l))
+        else:
+            print(x)
 
 ##run fizzbuzz
 fizzbuzz()

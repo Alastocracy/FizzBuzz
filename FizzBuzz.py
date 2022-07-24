@@ -9,6 +9,8 @@ def fizzbuzz():
             l.append("Buzz")
         if x % 7 == 0:
             l.append("Bang")
+        if x % 11 == 0:
+            l = ("Bong")
         if l:
             print("".join(l))
         else:

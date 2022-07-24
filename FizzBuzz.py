@@ -16,7 +16,10 @@ def fizzbuzz():
                 l.insert(1, "Fezz")
             else: l.insert (0, "Fezz")
         if l:
-            print("".join(l))
+            if x % 17 == 0:
+                l.reverse()
+                print("".join(l))
+            else: print("".join(l))
         else:
             print(x)
 

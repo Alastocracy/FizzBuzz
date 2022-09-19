@@ -1,7 +1,7 @@
 
 ## function for fizzbuzz
 def fizzbuzz(): 
-    for x in range (1, 101):
+    for x in range (1, 301):
         ## create an empty list to then populate with the replacement message
         l = []
 
